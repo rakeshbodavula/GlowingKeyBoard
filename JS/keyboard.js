@@ -74,7 +74,8 @@ document.addEventListener('keypress', async (e) => {
         document.querySelector('input[type="radio"]').checked = false
         return
     }
-    const check = $(key)[0].checked
+    // const check = $(key)[0].checked
+    const check = document.querySelector(key).checked
     // console.log(check)
     if (!check) {
         // $('.heading').css('color',value)
@@ -95,7 +96,6 @@ document.addEventListener('keypress', async (e) => {
 
 let flag = 0
 document.getElementById('toggle_btn').addEventListener('click', () => {
-    console.log(flag)
     if (flag) {
         document.querySelector('.instructions').style.animation = "closeInstruction 1s ease-in-out"
         document.querySelector('.instructions').classList.add('toggle')
