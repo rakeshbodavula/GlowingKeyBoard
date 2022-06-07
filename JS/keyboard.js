@@ -1,4 +1,4 @@
-// $(document).ready(function(){
+$(document).ready(function(){
 
     function getColorName(id){
         let color,value
@@ -108,4 +108,4 @@
     // else{
     //     document.querySelector('.instructions').style.animation = "closeInstruction 2s"
     // }
-// })   
+})   
