@@ -8,7 +8,7 @@
 
 
 
-.Error{
+.error{
   display: none;
 }
 
@@ -229,10 +229,11 @@ input {
 }
 
 @media screen and (max-width : 850px) {
-    body{
+    .main_div{
       display: none;
     }
-    .Error{
+
+    .error{
       display: block;
       color: #ffff;
       font-size: larger;
