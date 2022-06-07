@@ -7,13 +7,19 @@
 }
 
 
+
+.Error{
+  display: none;
+}
+
 .instructions{
   position: absolute;
   /* transform: translate(50%,50%); */
   color : #ffff;
   /* top: -100vh; */
   width: 100vw;
-  height: 93vh;
+  left: 0;
+  height: 92vh;
   z-index: 2;
   background-color: coral;
 }
@@ -25,8 +31,7 @@
 
 .instructions p{
   line-height: 1.7;
-  letter-spacing: 1px;
-  word-spacing: 3px;
+  /* letter-spacing: 1px; */
   text-align: center;
   background: transparent;
 }
@@ -42,7 +47,7 @@
   cursor: pointer;
   position: absolute;
   top: 1vh;
-  left: 10px;
+  left: 3vw;
   padding: 5px;
   border: solid 1px #ffff;
   color: #ffff;
@@ -66,21 +71,21 @@
 }
 
 .letter{
-  margin: 3vh 0;
-  font-size: 35px;
+  margin: 2vh 0;
+  font-size: 25px;
   text-align: center;
 }
 
 .screen_div{
-  margin-top: 10px;
+  margin-top: 2vh;
   position: relative;
 }
 
 .screen{
   margin: auto;
   text-align: center;
-  height: 100px;
-  width: 100px;
+  height: 70px;
+  width: 70px;
   border: solid 3px #ffff;
   border-bottom: 8px solid #ffff;
   border-radius: 5px;
@@ -93,17 +98,18 @@ h1 {
 
 .box {
   position: absolute;
-  bottom: 1%;
+  /* bottom: 5%; */
+  top: 30vh;
   border: solid white;
   border-radius: 10px;
   padding: 10px;
-  margin-top: 4vh;
+  margin-top: 3vh;
   display: grid;
   justify-content: center;
   align-items: center;
   text-align: center;
-  grid-template-columns: repeat(30, 30px);
-  grid-template-rows: repeat(6, 60px);
+  grid-template-columns: repeat(30, 25px);
+  grid-template-rows: repeat(6, 50px);
 }
 
 .key {
@@ -112,7 +118,7 @@ h1 {
   padding: 10px 0;
   border: solid #fff;
   border-radius: 5px;
-  height: 45px;
+  height: 40px;
   grid-column: span 2;
   cursor: pointer;
 }
@@ -220,4 +226,15 @@ input {
   to{
     top: -100vh;
   }
+}
+
+@media screen and (max-width : 850px) {
+    body{
+      display: none;
+    }
+    .Error{
+      display: block;
+      color: #ffff;
+      font-size: larger;
+    }
 }
